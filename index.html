@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            height: 100vh;
+        }
+
+        .otp-box input {
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .otp-box input:focus {
+            border-color: #0d6efd;
+            outline: none;
+            box-shadow: 0 0 5px #0d6efd;
+        }
+
+        .card {
+            border-radius: 20px;
+        }
+
+        .title-text {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body class="d-flex align-items-center justify-content-center">
+
+    <div class="container">
+        <div class="row shadow-lg rounded overflow-hidden">
+
+            <!-- Left Side -->
+            <div class="col-md-6 bg-primary text-white p-5 d-flex flex-column justify-content-center">
+                <h1 class="display-5 title-text">OTP Verification</h1>
+                <p>Secure your login with One Time Password</p>
+            </div>
+
+            <!-- Right Side -->
+            <div class="col-md-6 bg-white p-5">
+
+                <h4 class="text-center mb-4">Enter OTP</h4>
+
+                <div class="d-flex justify-content-between otp-box mb-5">
+                    <input type="text" maxlength="1" id="d1">
+                    <input type="text" maxlength="1" id="d2">
+                    <input type="text" maxlength="1" id="d3">
+                    <input type="text" maxlength="1" id="d4">
+                </div>
+
+                <button class="btn btn-primary w-100 mb-3 p-3" onclick="verifyOTP()">Verify OTP</button>
+                <button class="btn btn-outline-secondary w-100 p-3" onclick="generateOTP()">Generate OTP</button>
+
+                <p id="result" class="text-center mt-3 fw-bold"></p>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
