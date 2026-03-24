@@ -42,7 +42,7 @@ A simple and responsive OTP (One-Time Password) verification system built using 
 ## 🖨️ Output :
 
 <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/311ef7bf-8cc7-4282-9ff3-93794b1346c6" />
-
+<br>
 <img width="1600" height="850" alt="image" src="https://github.com/user-attachments/assets/c54e7a77-e134-4199-8c95-b1bd600c87ff" />
 
 
